@@ -24,6 +24,75 @@ body {
   background: linear-gradient(135deg, var(--light-blue-bg) 0%, #f1f5f9 100%);
   color: var(--light-blue-text);
   line-height: 1.6;
+  display: flex;
+}
+
+.sidebar {
+  width: 280px;
+  background: var(--light-blue-surface);
+  border-right: 1px solid var(--light-blue-border);
+  padding: 30px 20px;
+  box-shadow: 2px 0 6px var(--shadow);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-content h2 {
+  font-size: 1.8rem;
+  color: var(--light-blue-accent);
+  margin: 0 0 15px 0;
+  border: none;
+  padding: 0;
+}
+
+.greeting-text {
+  font-size: 0.95rem;
+  color: var(--light-blue-text);
+  line-height: 1.5;
+  margin: 0 0 25px 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--light-blue-border);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item strong {
+  display: block;
+  color: var(--light-blue-accent);
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--light-blue-text);
+}
+
+.contact-item a {
+  color: var(--light-blue-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+  color: var(--light-blue-muted);
+  text-decoration: underline;
 }
 
 .page-shell {
